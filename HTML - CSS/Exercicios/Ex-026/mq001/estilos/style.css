@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    margin: 0PX;
+    padding: 0px;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header{
+    background-color: aliceblue;
+}
+header > h1{
+    text-align: center;
+}
+menu ul{
+    list-style-type: none;
+    background-color: bisque;
+}
+
+menu li{
+    background-color: black;
+    display: inline-block;
+    color: blanchedalmond;
+}
+article{
+    width: 600px;
+    display: block;
+    margin:auto ;
+}
