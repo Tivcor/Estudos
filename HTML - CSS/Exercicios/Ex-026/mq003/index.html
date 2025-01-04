@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media querie</title>
+    <link rel="stylesheet" href="stilos">
     <style>    
     /*Declarações gerais*/
         *{
@@ -23,16 +24,13 @@
             text-shadow: 3px 3px 0px purple;
         }
         /*Declarações retrato*/
-        @media  and (orientation :portrait) {
-            body{
-        background: url(../imagens/cev-portrait.jpg);
-}
+        @media  and (orientation :portrait){
+            body{ background: url(../imagens/cev-portrait.jpg);}}
         /*Declarações paisagens*/
         @media  and (orientation :landscape) {
-            body{
-    background: url(../imagens/cev-landscape.jpg);
-    background-position:left bottom;}
-}
+            body{background: url(../imagens/cev-landscape.jpg);
+                background-position:left bottom;}}
+
         
     </style>
 </head>
