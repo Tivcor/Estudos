@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body ,html{
+    background-color: bisque;
+}
+i#burger{
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+i#burger:hover{
+    background-color: white;
+    color: black;
+}
