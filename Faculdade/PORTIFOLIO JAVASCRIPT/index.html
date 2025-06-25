@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validação de Email</title>
+  <style>
+    *{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
+    }
+    main{
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    h1{
+      text-align: center
+
+    }
+    form{
+      text-align: center;
+      margin: auto;
+      width: 50%;
+      padding: 50px;
+      background-color: rgba(151, 127, 173, 0.308);
+      border-radius: 20px;
+      box-sizing: border-box;
+      box-shadow: 1px 1px 1px black;
+      
+    }
+    body , html{
+      background-color: rgb(38, 75, 75);
+      height: 100vh;
+      width: 100vw;
+    }
+    label{
+      background-color: rgba(73, 145, 145, 0.726);
+      display: block;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+    input[type="email"]{
+      
+      background-color: rgba(169, 158, 221, 0.829);
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    input[type="submit"]{
+      background-color: srgb(11, 84, 133);
+      width: 25%;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+  </style>
+  <body>
+  <h1>Validação de email</h1>
+
+  <form onsubmit="return validarEmail()">
+    <label for="email">Digite seu e-mail:</label><br>
+    <input type="email" id="email" name="email" placeholder="Digite seu email. EX:Fulano@exemplo.com">
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+  <section id="email">
+    <script>
+      function validarEmail(){
+        var email = document.getElementById("email").value;
+        var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if(regex.test(email)){
+          alert("Email adicionado com sucesso!");
+        } else {
+          alert("Insira um email válido");
+          return false;
+        }
+      }
+    </script>
+  </section>
+</head>
+</html>
