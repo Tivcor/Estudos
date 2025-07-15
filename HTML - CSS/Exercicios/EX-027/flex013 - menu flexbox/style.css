@@ -17,13 +17,37 @@ body{
 header{
     background-color: aquamarine;
     color: white;
-    padding: 10px
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 header > h1{
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
+    flex: 0 0 200px;
+    text-shadow:  2px 2px 2px violet;
 }
 nav {
-    border: 1PX dotted black;
+    /*border: 1PX dotted black;*/
+    display: flex;
+    flex-flow: row wrap;
+}
+header > nav > a {
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    margin: 5px;
+    border: 3px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: flex-end;
+}
+header > nav > a:hover{
+    background-color: aliceblue;
+    color: black;
+    transition: backgrond-color .3s;
 }
 main{
     background-color: white;
@@ -32,3 +56,4 @@ main{
     border-radius: 10px;
     box-shadow: 2px 2px 2px black;
 }
+
